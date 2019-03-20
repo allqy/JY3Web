@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0, user-scaleable=0">
+		<title>微信底部菜单</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			.container{
+				width:100%;
+				height:180px;
+				position:absolute;
+				bottom:0;
+			}
+			.subDiv{
+				width:25%;
+				height:180px;
+				float: left;
+				text-align:center;
+			}
+			.subDiv img{
+				width:50%;
+				height:50%;
+				position:relative;
+			}
+			.subDiv span{
+				font-size:25px;
+				display:block;
+			}
+			.msg{
+				width:30px;
+				height:20px;
+				border-radius:50%;
+				background-color:red;
+				position:absolute;
+				text-align: center;
+				left:50px;
+				top:15px;
+			}
+			#msg{
+				line-height:20px;
+				font-size:10px;
+				color:black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="subDiv">
+				<div class="msg">
+					<span id="msg">20</span>
+				</div>
+				<img src="img/weixin.svg"/>
+				<span>微信</span>
+			</div>
+			<div class="subDiv">
+				<img src="img/people.svg"/>
+				<span>联系人</span>
+			</div>
+			<div class="subDiv">
+				<img src="img/find.svg"/>
+				<span>发现</span>
+			</div>
+			<div class="subDiv">
+				<img src="img/me.svg"/>
+				<span>我</span>
+			</div>
+		</div>
+	</body>
+</html>
