@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>QQ音乐唱片动画效果</title>
+		<style>
+			@-webkit-keyframes qqMusic{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}
+			#container{
+				width:200px;
+				height:200px;
+				border-radius:50%;
+				border:1px solid black;
+				position: relative;
+				overflow: hidden;
+				animation:qqMusic 6s linear infinite;
+			}
+			#container img{
+				width:200px;
+				height:200px;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<img src="img/jhy.jpg"/>
+		</div>
+	</body>
+</html>
