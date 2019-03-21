@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>动画效果</title>
+	</head>
+	<style>
+		@-webkit-keyframes myFirst{
+			from{
+				left:0px;
+				top:0px;
+				transform:rotate(0deg);
+			}
+			to{
+				left:500px;
+				top:0px;
+				transform:rotate(360deg);
+			}
+		}
+		#container{
+			width:150px;
+			height:70px;
+			background-color:pink;
+			position: absolute;
+			text-align: center;
+			animation:myFirst 2.5s;
+		}
+		#container span{
+			line-height:70px;
+		}
+	</style>
+	<body>
+		<div id="container">
+			<span>动画效果</span>
+		</div>
+	</body>
+</html>
