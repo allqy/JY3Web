@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>点击事件</title>
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<style>
+		    #btn{
+		    	height:30px;
+		    	width:70px;
+		    	border-radius:10px;
+		    	background-image: linear-gradient(red,orange);
+		    	cursor:pointer;
+		    	transition:all 0.5s;
+		    }
+			#content{
+				width:500px;
+				height:200px;
+				text-align: center;
+				background-color:purple;
+				display:none;
+			}
+			#content h2{
+				line-height:200px;
+			}
+			#btn:hover{
+				transform:scale(1.5);
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="添加" id="btn"/>
+		<div id="content">
+			<h2>Hello everyone!</h2>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#btn").click(function(){
+				$("#content").toggle(300);
+			})
+		} 
+		)
+	</script>
+</html>
