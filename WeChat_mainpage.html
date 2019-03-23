@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0, user-scaleable=0">
+		<title>微信消息主界面</title>
+		<link rel="stylesheet" href="../css/WeChat_common.css" />
+		<link rel="stylesheet" href="../css/WeChat_signal.css" />
+		<link rel="stylesheet" href="../css/WeChat_foot.css" />
+		<style>
+			#title{
+				width:100%;
+				height:50px;
+				display: flex;
+				background-color:black;
+			}
+			.title1{
+				flex:0.6;
+				display: flex;
+				justify-content:flex-end;
+				align-items: center;
+				color:white;
+				font-size:21px;
+			}
+			.title2{
+				flex:0.4;
+				display: flex;
+				justify-content:flex-end;
+				align-items: center;
+			}
+			.title2 img{
+				width:25px;
+				height:25px;
+			}
+			#content{
+				flex:1;
+				overflow: scroll;
+			}
+			#firstMsg{
+				width:100%;
+				height:60px;
+				border-bottom:1px solid dimgray;
+				display: flex;
+				align-items: center;
+			}
+			#msg_left{
+				flex:0.2;
+				height:100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#msg_left img{
+				width:50px;
+				height:50px;
+			}
+			#msg_mid{
+				flex:0.6;
+				height:100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+			#msg_mid span:nth-child(1){
+				color:black;
+				font-size:15px;
+				font-weight:500;
+			}
+			#msg_mid span:nth-child(2){
+				color:black;
+				font-size:12px;
+			}
+			#msg_right{
+				flex:0.2;
+				height:100%;
+				color:dimgray;
+				font-size:14px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-end;
+			}
+			#msg_right img{
+				width:25px;
+				height:25px;
+			}
+			
+			#secondMsg{
+				width:100%;
+				height:60px;
+				border-bottom:1px solid dimgray;
+				display: flex;
+				align-items: center;
+			}
+			#second_left{
+				flex:0.2;
+				height:100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#second_left img{
+				width:50px;
+				height:50px;
+			}
+			#second_mid{
+				flex:0.6;
+				height:100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+			#second_mid span:nth-child(1){
+				color:black;
+				font-size:15px;
+				font-weight:500;
+			}
+			#second_mid span:nth-child(2){
+				color:black;
+				font-size:12px;
+			}
+			#second_right{
+				flex:0.2;
+				height:100%;
+				color:dimgray;
+				font-size:14px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-end;
+			}
+			#second_right img{
+				width:25px;
+				height:25px;
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="container">
+				<div id="signal">
+					<div class="signal1">
+						<ul>
+							<li></li>
+							<li></li>
+							<li id="have"></li>
+							<li id="have"></li>
+							<li id="have"></li>
+						</ul>
+						<span>中国移动</span>
+						<img src="../img/Wi-fi.svg"/>
+					</div>
+					<div class="signal2">
+						<span>19:30</span>
+					</div>
+					<div class="signal3">
+						<img src="../img/锁2-01.svg"/>
+						<img src="../img/闹钟.svg"/>
+						<img src="../img/电量.svg"/>
+					</div>
+				</div>
+				<div id="title">
+					<div class="title1">
+						<span>微信(5)</span>
+					</div>
+					<div class="title2">
+						<img src="../img/加号.svg"/>
+					</div>
+			</div>
+			<div id="content">
+				<div id="firstMsg">
+					<div id="msg_left">
+						<img src="../img/songhuiqiao.jpg"/>
+					</div>
+					<div id="msg_mid">
+						<span>宋慧乔</span>
+						<span>今晚想吃点什么呀!</span>
+					</div>
+					<div id="msg_right">
+						<span>昨天</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				<div id="secondMsg">
+					<div id="second_left">
+						<img src="../img/lingengxin.jpg"/>
+					</div>
+					<div id="second_mid">
+						<span>林更新</span>
+						<span>晚上通宵去吗?</span>
+					</div>
+					<div id="second_right">
+						<span>12:00</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				<div id="firstMsg">
+					<div id="msg_left">
+						<img src="../img/songhuiqiao.jpg"/>
+					</div>
+					<div id="msg_mid">
+						<span>宋慧乔</span>
+						<span>今晚想吃点什么呀!</span>
+					</div>
+					<div id="msg_right">
+						<span>昨天</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				<div id="secondMsg">
+					<div id="second_left">
+						<img src="../img/lingengxin.jpg"/>
+					</div>
+					<div id="second_mid">
+						<span>林更新</span>
+						<span>晚上通宵去吗?</span>
+					</div>
+					<div id="second_right">
+						<span>12:00</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				<div id="firstMsg">
+					<div id="msg_left">
+						<img src="../img/songhuiqiao.jpg"/>
+					</div>
+					<div id="msg_mid">
+						<span>宋慧乔</span>
+						<span>今晚想吃点什么呀!</span>
+					</div>
+					<div id="msg_right">
+						<span>昨天</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				<div id="secondMsg">
+					<div id="second_left">
+						<img src="../img/lingengxin.jpg"/>
+					</div>
+					<div id="second_mid">
+						<span>林更新</span>
+						<span>晚上通宵去吗?</span>
+					</div>
+					<div id="second_right">
+						<span>12:00</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div id="firstMsg">
+					<div id="msg_left">
+						<img src="../img/songhuiqiao.jpg"/>
+					</div>
+					<div id="msg_mid">
+						<span>宋慧乔</span>
+						<span>今晚想吃点什么呀!</span>
+					</div>
+					<div id="msg_right">
+						<span>昨天</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				<div id="secondMsg">
+					<div id="second_left">
+						<img src="../img/lingengxin.jpg"/>
+					</div>
+					<div id="second_mid">
+						<span>林更新</span>
+						<span>晚上通宵去吗?</span>
+					</div>
+					<div id="second_right">
+						<span>12:00</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div id="firstMsg">
+					<div id="msg_left">
+						<img src="../img/songhuiqiao.jpg"/>
+					</div>
+					<div id="msg_mid">
+						<span>宋慧乔</span>
+						<span>今晚想吃点什么呀!</span>
+					</div>
+					<div id="msg_right">
+						<span>昨天</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				<div id="secondMsg">
+					<div id="second_left">
+						<img src="../img/lingengxin.jpg"/>
+					</div>
+					<div id="second_mid">
+						<span>林更新</span>
+						<span>晚上通宵去吗?</span>
+					</div>
+					<div id="second_right">
+						<span>12:00</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div id="firstMsg">
+					<div id="msg_left">
+						<img src="../img/songhuiqiao.jpg"/>
+					</div>
+					<div id="msg_mid">
+						<span>宋慧乔</span>
+						<span>今晚想吃点什么呀!</span>
+					</div>
+					<div id="msg_right">
+						<span>昨天</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				<div id="secondMsg">
+					<div id="second_left">
+						<img src="../img/lingengxin.jpg"/>
+					</div>
+					<div id="second_mid">
+						<span>林更新</span>
+						<span>晚上通宵去吗?</span>
+					</div>
+					<div id="second_right">
+						<span>12:00</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div id="firstMsg">
+					<div id="msg_left">
+						<img src="../img/songhuiqiao.jpg"/>
+					</div>
+					<div id="msg_mid">
+						<span>宋慧乔</span>
+						<span>今晚想吃点什么呀!</span>
+					</div>
+					<div id="msg_right">
+						<span>昨天</span>
+						<img src="../img/铃声-静音.svg"/>
+					</div>
+				</div>
+			</div>
+			<div id="foot">
+				<div id="f_chat">
+					<img src="../img/微信 (2).svg"/>
+					<span>微信</span>
+				</div>
+				<div id="f_book">
+					<img src="../img/通讯录 (1).svg"/>
+					<span>通讯录</span>
+				</div>
+				<div id="f_find">
+					<img src="../img/发现 (1).svg"/>
+					<span>发现</span>
+				</div>
+				<div id="f_me">
+					<img src="../img/我的.svg"/>
+					<span>我</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
