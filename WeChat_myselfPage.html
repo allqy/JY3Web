@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0, user-scaleable=0">
+		<title>微信myself页面</title>
+		<link rel="stylesheet" href="../css/WeChat_common.css" />
+		<link rel="stylesheet" href="../css/WeChat_signal.css" />
+		<link rel="stylesheet" href="../css/WeChat_foot.css" />
+		<style>
+			#title{
+				width:100%;
+				height:150px;
+				display: flex;
+				border-bottom:0.5px solid gainsboro;
+			}
+			#myphotoDiv{
+				flex:0.3;
+				height:100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#myphotoDiv img{
+				width:70px;
+				height:70px;
+				border-radius:5px;
+			}
+			#nicknameDiv{
+				flex:0.5;
+				height:100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+			}
+			#nicknameDiv span{
+				margin-top:15px;
+				color:darkgrey;
+			}
+			#rightDiv{
+				flex:0.2;
+				height:100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#rightDiv1{
+				flex:0.3;
+				width:100%;
+				display: flex;
+				justify-content: center;
+				align-items:center;
+			}
+			#rightDiv2{
+				flex:0.7;
+				width:100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#rightDiv1 img{
+				width:35px;
+				height:35px;
+			}
+			#rightDiv2 img{
+				width:20px;
+				height:20px;
+			}
+			#picture_go{
+				margin-left:18px;
+			}
+			
+			
+			
+			/*中间内容部分*/
+			#content{
+				flex:1;
+				width:100%;
+				overflow: scroll;
+			}
+			.oneRow{
+				width:100%;
+				height:50px;
+				display: flex;
+				border-bottom:0.5px solid gainsboro;
+			}
+			.row_left{
+				flex:0.9;
+				height:100%;
+				display: flex;
+				align-items: center;
+				color:black;
+			}
+			.row_left img{
+				width:30px;
+				height:30px;
+				margin-left:20px;
+				margin-right:20px;
+			}
+			.row_right{
+				flex:0.1;
+				height:100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.row_right img{
+				width:25px;
+				height:25px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+        	作者：403063790@qq.com
+        	时间：2019-03-23
+        	描述：myself页面上半部分
+        -->
+		<div id="container">
+				<div id="signal">
+					<div class="signal1">
+						<ul>
+							<li></li>
+							<li></li>
+							<li id="have"></li>
+							<li id="have"></li>
+							<li id="have"></li>
+						</ul>
+						<span>中国移动</span>
+						<img src="../img/Wi-fi.svg"/>
+					</div>
+					<div class="signal2">
+						<span>19:30</span>
+					</div>
+					<div class="signal3">
+						<img src="../img/锁2-01.svg"/>
+						<img src="../img/闹钟.svg"/>
+						<img src="../img/电量.svg"/>
+					</div>
+				</div>
+				<div id="title">
+					<div id="myphotoDiv">
+						<img src="../img/susu.jpeg"/>
+					</div>
+					<div id="nicknameDiv">
+						<h2>新人旧酒</h2>
+						<span>微信号:wxid_xrjj6l...</span>
+					</div>
+					<div id="rightDiv">
+						<div id="rightDiv1">
+							<img src="../img/相机.svg"/>
+						</div>
+						<div id="rightDiv2">
+							<img src="../img/二维码.svg"/>
+							<img src="../img/前进.svg"/ id="picture_go">
+						</div>
+					</div>
+			    </div>
+			
+			
+			    <div id="content">
+			    	<div class="oneRow">
+			    		<div class="row_left">
+			    			<img src="../img/微信支付.svg"/>
+			    			<span>支付</span>
+			    		</div>
+			    		<div class="row_right">
+			    			<img src="../img/前进.svg"/>
+			    		</div>
+			    	</div>
+			    	
+			    	<div class="oneRow">
+			    		<div class="row_left">
+			    			<img src="../img/收藏.svg"/>
+			    			<span>收藏</span>
+			    		</div>
+			    		<div class="row_right">
+			    			<img src="../img/前进.svg"/>
+			    		</div>
+			    	</div>
+			    	
+			    	<div class="oneRow">
+			    		<div class="row_left">
+			    			<img src="../img/相册 (1).svg"/>
+			    			<span>相册</span>
+			    		</div>
+			    		<div class="row_right">
+			    			<img src="../img/前进.svg"/>
+			    		</div>
+			    	</div>
+			    	
+			    	<div class="oneRow">
+			    		<div class="row_left">
+			    			<img src="../img/卡包.svg"/>
+			    			<span>卡包</span>
+			    		</div>
+			    		<div class="row_right">
+			    			<img src="../img/前进.svg"/>
+			    		</div>
+			    	</div>
+			    	
+			    	<div class="oneRow">
+			    		<div class="row_left">
+			    			<img src="../img/表情.svg"/>
+			    			<span>表情</span>
+			    		</div>
+			    		<div class="row_right">
+			    			<img src="../img/前进.svg"/>
+			    		</div>
+			    	</div>
+			    	
+			    	<div class="oneRow">
+			    		<div class="row_left">
+			    			<img src="../img/设置.svg"/>
+			    			<span>设置</span>
+			    		</div>
+			    		<div class="row_right">
+			    			<img src="../img/前进.svg"/>
+			    		</div>
+			    	</div>
+			    </div>
+			
+			
+			  <div id="foot">
+				<div id="f_chat">
+					<img src="../img/微信 (2).svg"/>
+					<span>微信</span>
+				</div>
+				<div id="f_book">
+					<img src="../img/通讯录 (1).svg"/>
+					<span>通讯录</span>
+				</div>
+				<div id="f_find">
+					<img src="../img/发现 (1).svg"/>
+					<span>发现</span>
+				</div>
+				<div id="f_me">
+					<img src="../img/我的.svg"/>
+					<span>我</span>
+				</div>
+			</div>
+	</body>
+</html>
