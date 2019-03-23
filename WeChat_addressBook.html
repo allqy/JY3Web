@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0, user-scaleable=0">
+		<title>微信通讯录页面</title>
+		<link rel="stylesheet" href="../css/WeChat_common.css" />
+		<link rel="stylesheet" href="../css/WeChat_signal.css" />
+		<link rel="stylesheet" href="../css/WeChat_foot.css" />
+		<style>
+		    /*通讯录标题样式*/
+		    #title{
+				width:100%;
+				height:50px;
+				display: flex;
+				background-color:black;
+				color:white;
+				font-size:18px;
+			}
+			.title1{
+				flex:0.7;
+				height:100%;
+				display: flex;
+				align-items: center;
+				margin-left:20px;
+			}
+			.title2{
+				flex:0.3;
+				height:100%;
+				display: flex;
+				justify-content:space-around;
+				align-items: center;
+			}
+			.title2 img{
+				width:25px;
+				height:25px;
+			}
+			
+		    /*通讯录前四条样式*/
+		    #content{
+		    	flex:1;
+		    	width:100%;
+		    	overflow:scroll;
+		    }
+			.book_head{
+				width:100%;
+				height: 50px;
+				display: flex;
+				border-bottom:0.5px solid gainsboro;
+			}
+			.book_head1{
+				flex:0.2;
+				height:100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.picture_container{
+				width:40px;
+				height:40px;
+				border-radius:4px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#picture_1{
+				background-color:orange;
+			}
+			#picture_2{
+				background-color:limegreen;
+			}
+			#picture_3{
+				background-color:blueviolet;
+			}
+			#picture_4{
+				background-color:dodgerblue;
+			}
+			.picture_container img{
+				width:28px;
+				height:28px;
+			}
+			.book_head2{
+				flex:0.8;
+				height:100%;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+        	作者：403063790@qq.com
+        	时间：2019-03-23
+        	描述：信号栏以及标题栏部分
+        -->
+		<div id="container">
+				<div id="signal">
+					<div class="signal1">
+						<ul>
+							<li></li>
+							<li></li>
+							<li id="have"></li>
+							<li id="have"></li>
+							<li id="have"></li>
+						</ul>
+						<span>中国移动</span>
+						<img src="../img/Wi-fi.svg"/>
+					</div>
+					<div class="signal2">
+						<span>19:30</span>
+					</div>
+					<div class="signal3">
+						<img src="../img/锁2-01.svg"/>
+						<img src="../img/闹钟.svg"/>
+						<img src="../img/电量.svg"/>
+					</div>
+				</div>
+				<div id="title">
+					<div class="title1">
+						<span>通讯录</span>
+					</div>
+					<div class="title2">
+						<img src="../img/搜索.svg"/>
+						<img src="../img/添加.svg"/>
+					</div>
+			    </div>
+			
+			
+			<!--
+        	作者：403063790@qq.com
+        	时间：2019-03-23
+        	描述：通讯录上半部分
+            -->
+			<div id="content">
+				<div class="book_head">
+					<div class="book_head1">
+						<div class="picture_container" id="picture_1">
+							<img src="../img/AK-MN添加好友_fill.svg"/>
+						</div>
+					</div>
+					<div class="book_head2">
+						<span>新的朋友</span>
+					</div>
+				</div>
+				<div class="book_head">
+					<div class="book_head1">
+						<div class="picture_container" id="picture_2">
+							<img src="../img/群聊1.svg"/>
+						</div>
+					</div>
+					<div class="book_head2">
+						<span>群聊</span>
+					</div>
+				</div>
+				<div class="book_head">
+					<div class="book_head1">
+						<div class="picture_container" id="picture_3">
+							<img src="../img/标签.svg"/>
+						</div>
+					</div>
+					<div class="book_head2">
+						<span>标签</span>
+					</div>
+				</div>
+				<div class="book_head">
+					<div class="book_head1">
+						<div class="picture_container" id="picture_4">
+							<img src="../img/公众号.svg"/>
+						</div>
+					</div>
+					<div class="book_head2">
+						<span>公众号</span>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--
+        	作者：403063790@qq.com
+        	时间：2019-03-23
+        	描述：底部菜单栏
+            -->
+			<div id="foot">
+				<div id="f_chat">
+					<img src="../img/微信 (2).svg"/>
+					<span>微信</span>
+				</div>
+				<div id="f_book">
+					<img src="../img/通讯录 (1).svg"/>
+					<span>通讯录</span>
+				</div>
+				<div id="f_find">
+					<img src="../img/发现 (1).svg"/>
+					<span>发现</span>
+				</div>
+				<div id="f_me">
+					<img src="../img/我的.svg"/>
+					<span>我</span>
+				</div>
+			</div>
+	</body>
+</html>
