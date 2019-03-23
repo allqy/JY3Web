@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0, user-scaleable=0">
+		<title>微信朋友圈</title>
+		<link rel="stylesheet" href="../css/WeChat_common.css" />
+		<link rel="stylesheet" href="../css/WeChat_signal.css" />
+		<link rel="stylesheet" href="../css/WeChat_foot.css" />
+		<style>
+			#title{
+				width:100%;
+				height:50px;
+				display: flex;
+				background-color:black;
+				color:white;
+				font-size:18px;
+			}
+			.title1{
+				flex:0.7;
+				height:100%;
+				display: flex;
+				align-items: center;
+				margin-left:20px;
+			}
+			.title2{
+				flex:0.3;
+				height:100%;
+				display: flex;
+				justify-content:space-around;
+				align-items: center;
+			}
+			.title2 img{
+				width:25px;
+				height:25px;
+			}
+			
+			#content{
+				flex:1;
+				overflow: scroll;
+			}
+			
+			/*朋友圈的每一行样式*/
+			.friendCircleRow{
+				width:100%;
+				height:70px;
+				display: flex;
+				border-bottom:0.5px solid gainsboro;
+			}
+			.row_left{
+				flex: 0.9;
+				height:100%;
+				display: flex;
+				align-items: center;
+				color:black;
+				font-size:15px;
+			}
+			.row_left img{
+				width:30px;
+				height:30px;
+				margin-left:20px;
+				margin-right:20px;
+			}
+			.row_right{
+				flex: 0.1;
+				height:100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.row_right img{
+				width:20px;
+				height:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+				<div id="signal">
+					<div class="signal1">
+						<ul>
+							<li></li>
+							<li></li>
+							<li id="have"></li>
+							<li id="have"></li>
+							<li id="have"></li>
+						</ul>
+						<span>中国移动</span>
+						<img src="../img/Wi-fi.svg"/>
+					</div>
+					<div class="signal2">
+						<span>19:30</span>
+					</div>
+					<div class="signal3">
+						<img src="../img/锁2-01.svg"/>
+						<img src="../img/闹钟.svg"/>
+						<img src="../img/电量.svg"/>
+					</div>
+				</div>
+				<div id="title">
+					<div class="title1">
+						<span>发现</span>
+					</div>
+					<div class="title2">
+						<img src="../img/搜索.svg"/>
+						<img src="../img/添加.svg"/>
+					</div>
+			    </div>
+			
+			
+			
+			<div id="content">
+				<div class="friendCircleRow">
+					<div class="row_left">
+						<img src="../img/好房拓 4.0.0 iconfont_朋友圈.svg"/>
+						<span>朋友圈</span>
+					</div>
+					<div class="row_right">
+						<img src="../img/前进.svg"/>
+					</div>
+				</div>
+				
+				
+				<div class="friendCircleRow">
+					<div class="row_left">
+						<img src="../img/扫一扫 (2).svg"/>
+						<span>扫一扫</span>
+					</div>
+					<div class="row_right">
+						<img src="../img/前进.svg"/>
+					</div>
+				</div>
+				
+				
+				<div class="friendCircleRow">
+					<div class="row_left">
+						<img src="../img/微信摇一摇_icon.svg"/>
+						<span>摇一摇</span>
+					</div>
+					<div class="row_right">
+						<img src="../img/前进.svg"/>
+					</div>
+				</div>
+				
+				
+				<div class="friendCircleRow">
+					<div class="row_left">
+						<img src="../img/看一看 (1).svg"/>
+						<span>看一看</span>
+					</div>
+					<div class="row_right">
+						<img src="../img/前进.svg"/>
+					</div>
+				</div>
+				
+				
+				<div class="friendCircleRow">
+					<div class="row_left">
+						<img src="../img/搜一搜.svg"/>
+						<span>搜一搜</span>
+					</div>
+					<div class="row_right">
+						<img src="../img/前进.svg"/>
+					</div>
+				</div>
+				
+				
+				<div class="friendCircleRow">
+					<div class="row_left">
+						<img src="../img/附近的人.svg"/>
+						<span>附近的人</span>
+					</div>
+					<div class="row_right">
+						<img src="../img/前进.svg"/>
+					</div>
+				</div>
+				
+				
+				<div class="friendCircleRow">
+					<div class="row_left">
+						<img src="../img/购物.svg"/>
+						<span>购物</span>
+					</div>
+					<div class="row_right">
+						<img src="../img/前进.svg"/>
+					</div>
+				</div>
+				
+				
+				
+				<div class="friendCircleRow">
+					<div class="row_left">
+						<img src="../img/游戏.svg"/>
+						<span>游戏</span>
+					</div>
+					<div class="row_right">
+						<img src="../img/前进.svg"/>
+					</div>
+				</div>
+				
+				
+				
+				<div class="friendCircleRow">
+					<div class="row_left">
+						<img src="../img/小程序.svg"/>
+						<span>小程序</span>
+					</div>
+					<div class="row_right">
+						<img src="../img/前进.svg"/>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div id="foot">
+				<div id="f_chat">
+					<img src="../img/微信 (2).svg"/>
+					<span>微信</span>
+				</div>
+				<div id="f_book">
+					<img src="../img/通讯录 (1).svg"/>
+					<span>通讯录</span>
+				</div>
+				<div id="f_find">
+					<img src="../img/发现 (1).svg"/>
+					<span>发现</span>
+				</div>
+				<div id="f_me">
+					<img src="../img/我的.svg"/>
+					<span>我</span>
+				</div>
+			</div>
+	</body>
+</html>
