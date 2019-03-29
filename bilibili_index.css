@@ -1,0 +1,100 @@
+/*导航栏部分*/
+.menuDiv{
+	width:90%;
+	height:8%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top:7%;
+	z-index:1;
+}
+.menu_item{
+	width:15%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu_item a{
+	text-decoration: none;
+	color:gray;
+}
+.openSign{
+	width:8%;
+	height:80%;
+}
+.menuDiv img{
+	width:100%;
+	height:100%;
+}
+/*隐藏导航栏*/
+.hiddenMenuDiv{
+	width:100%;
+	height:200px;
+	position: absolute;
+	left:0px;
+	top:0px;
+	display: flex;
+	flex-wrap: wrap;
+	/*background-color:plum;*/
+	background-color: white;
+	display:none;
+}
+.hiddenMenuDiv .hiddenmenu_item{
+	width:16%;
+	height:16%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hiddenmenu_item a{
+	text-decoration: none;
+	color:gray;
+}
+.topArralDiv{
+	width:100%;
+	height:10%;
+	/*background-color:palegreen;*/
+	position: absolute;
+	bottom:0px;
+}
+/*轮播图部分*/
+#banner{
+	width: 90%;
+	height:17%;
+	margin-top:26%;
+}
+#banner img{
+	width:100%;
+	height:100%;
+}
+/*内容部分*/
+#content{
+	width:90%;
+	height:60%;
+	min-height:400px;
+	/*background-color:pink;*/
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: flex-start;
+	margin-top:3px;
+}
+.OneContent{
+	width:48%;
+	height:150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size:12px;
+}
+.OneContent a{
+	width:90%;
+	height:70%;
+}
+.OneContent a img{
+	width:100%;
+	height:100%;
+}
