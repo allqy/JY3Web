@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>用户注册</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/zhuce.css" />
+		<link rel="icon" href="img/bilibili_logo.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<form>
+			<div id="background">
+				<div class="head">
+					<span>Sign  Up</span>
+				</div>
+				<div class="OneFrame">
+					<div class="OneFrame_img">
+						<img src="http://pp0o008cm.bkt.clouddn.com/phone.svg"/>
+					</div>
+					<div class="tel">
+						<input type="text" placeholder="请输入手机号码"/>
+					</div>
+				</div>
+				<div class="OneFrame">
+					<div class="OneFrame_img">
+						<img src="http://pp0o008cm.bkt.clouddn.com/lock.svg"/>
+					</div>
+					<div class="pwd">
+						<input type="password" placeholder="请输入6～12位验密码"/>
+					</div>
+				</div>
+				<div class="OneFrame">
+					<div class="OneFrame_img">
+						<img src="http://pp0o008cm.bkt.clouddn.com/nicheng.svg"/>
+					</div>
+					<div class="nicheng">
+						<input type="text" placeholder="请输入昵称"/>
+					</div>
+				</div>
+				<div class="interest">
+					<span>性别:</span>
+					<input type="radio" name="sex" value="0" checked="checked"/>男生
+					<input type="radio" name="sex" value="1"/>女生
+				</div>
+				<div class="yanzhengmaDiv">
+					<div class="OneFrame_img">
+						<img src="http://pp0o008cm.bkt.clouddn.com/yanzhengma.svg"/>
+					</div>
+					<div class="yanzhengma">
+						<input type="text" placeholder="请输入验证码"/>
+					</div>
+					<button id="yanzhengma_btn">获取验证码</button>
+				</div>
+				<!--
+                	注册按钮
+                -->
+                <div class="zhuce_btnDiv">
+                	<button class="zhuce_btn">注册</button>
+                </div>
+                <a href="bilibili_index.html">
+                   <div class="cancle">
+                   	  取消
+                   </div>
+                </a>
+			</div>
+		</form>
+	</body>
+</html>
