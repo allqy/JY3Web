@@ -1,0 +1,194 @@
+*{
+	margin:0;
+	padding:0;
+}
+body,form{
+	width:100%;
+	height:100%;
+	position:fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#background{
+	width:100%;
+	height:100%;
+}
+#background::before{
+	width:100%;
+	height:100%;
+	background-image:url(http://pp0o008cm.bkt.clouddn.com/zhuce1_background.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	-webkit-filter: blur(0.5px);
+	z-index:-1;
+}
+.head{
+	width:100%;
+	height:20%;
+	/*border:1px solid white;*/
+	color:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size:40px;
+}
+.OneFrame{
+	width:80%;
+	height:7%;
+	border:0.5px solid white;
+	border-radius:5px;
+	margin:20px auto 0px;
+	display: flex;
+}
+.OneFrame_img{
+	height:100%;
+	flex:0.15;
+	border-right:0.5px solid gainsboro;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.OneFrame_img img{
+	width: 50%;
+	height:50%;
+}
+.tel{
+	height:100%;
+	flex: 0.85;
+}
+.tel input{
+	height:100%;
+	flex: 0.85;
+	text-indent:5px;
+	background:none;
+	border:none;
+	color:white;
+}
+.tel input::-webkit-input-placeholder{
+	color:gainsboro;
+}
+.pwd{
+	height:100%;
+	flex: 0.85;
+}
+.pwd input{
+	height:100%;
+	flex: 0.85;
+	text-indent:5px;
+	background:none;
+	border:none;
+	color:white;
+}
+.pwd input::-webkit-input-placeholder{
+	color:gainsboro;
+}
+.nicheng{
+	height:100%;
+	flex: 0.85;
+}
+.nicheng input{
+	height:100%;
+	flex: 0.85;
+	text-indent:5px;
+	background:none;
+	border:none;
+	color:white;
+}
+.nicheng input::-webkit-input-placeholder{
+	color:gainsboro;
+}
+.interest{
+	width:80%;
+	height:5%;
+	border-radius:5px;
+	margin:10px auto;
+	display: flex;
+	align-items: center;
+	color:white;
+}
+.interest span{
+	color:white;
+	font-size:18px;
+	margin-left:7%;
+}
+.interest input{
+	width:10%;
+	height:30%;
+	margin-left:10%;
+}
+.yanzhengmaDiv{
+	width:80%;
+	height:6%;
+	border:0.5px solid white;
+	border-radius:5px;
+	margin:0 auto;
+	display: flex;
+}
+.yanzhengma{
+	height:100%;
+	flex: 0.55;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.yanzhengma input{
+	height:100%;
+	flex: 0.55;
+	text-indent:5px;
+	background:none;
+	border:none;
+	color:white;
+}
+.yanzhengma input::-webkit-input-placeholder{
+	color:gainsboro;
+}
+.yanzhengma img{
+	width:50%;
+	height:50%;
+}
+#yanzhengma_btn{
+	height:100%;
+	flex: 0.3;
+	border-radius:5px;
+	/*background-image:linear-gradient(purple,blue);*/
+	background:none;
+	border:none;
+	border-left:0.5px solid white;
+	color: white;
+}
+/*注册按钮*/
+.zhuce_btnDiv{
+	width: 80%;
+	height:7%;
+	margin: 50px auto 0px;
+}
+.zhuce_btn{
+	width:100%;
+	height:100%;
+	background-color:deepskyblue;
+	border-radius: 5px;
+	border:none;
+	color:white;
+	font-size:20px;
+	letter-spacing: 10px;
+}
+/*取消按钮*/
+.cancle{
+	width:80%;
+	height:7%;
+	border-radius: 5px;
+	border:0.5px solid white;
+	color:white;
+	font-size:20px;
+	letter-spacing: 10px;
+	background:none;
+	margin:10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
