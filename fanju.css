@@ -1,0 +1,139 @@
+.menuDiv{
+	width:90%;
+	height:8%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top:7%;
+	z-index:1;
+	/*border:1px solid black;*/
+}
+.menu_item{
+	width:15%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu_item a{
+	text-decoration: none;
+	color:gray;
+	/*font-size:10px;*/
+}
+.menuDiv div:nth-child(3) a{
+	color:hotpink;
+}
+.menuDiv .menu_item:nth-child(3){
+	border-bottom:2px solid hotpink;
+}
+.openSign{
+	width:8%;
+	height:80%;
+}
+.menuDiv img{
+	width:100%;
+	height:100%;
+}
+#optionDiv{
+	width:90%;
+	height: 7%;
+	background-color:ghostwhite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:26%;
+	border-bottom:0.5px solid gainsboro;
+}
+.optionlist{
+	width:100%;
+	height:100%;
+}
+#optionDiv .optionlist li{
+	list-style:none;
+	float: left;
+	margin:10px 10px auto;
+	font-size:14px;
+	overflow: auto;
+}
+.tuijian{
+	color:hotpink;
+}
+.option{
+	color:gray;
+}
+
+
+
+#hot{
+	width:90%;
+	height:5%;
+	min-height:50px;
+	/*border:1px solid black;*/
+	background-color:ghostwhite;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.hot_left{
+	height:100%;
+	flex:0.25;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.hot_left span{
+	font-size: 18px;
+	font-weight: 500;
+}
+.hot_right{
+	height:100%;
+	flex:0.3;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color:orange;
+}
+.hot_right img{
+	width:25%;
+	height:70%;
+}
+.next{
+	width:25%;
+	height:70%;
+}
+.next img{
+	width:100%;
+	height:100%;
+}
+
+
+
+#content{
+	width:90%;
+	height:60%;
+	min-height:400px;
+	background-color:ghostwhite;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: flex-start;
+	margin-top:3px;
+}
+.OneContent{
+	width:48%;
+	height:150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size:12px;
+}
+.OneContent a{
+	width:90%;
+	height:70%;
+}
+.OneContent a img{
+	width:100%;
+	height:100%;
+}
